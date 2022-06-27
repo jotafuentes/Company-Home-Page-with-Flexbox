@@ -1,0 +1,304 @@
+
+/*RESET*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*GENERALES*/
+p {
+    font-family: 'Roboto', sans-serif;;
+}
+
+h1, h2, h3 {
+    font-family: 'Lora', serif;
+}
+
+/*HEADER*/
+
+.nav-container {
+    width: 100%;
+    text-align: center;
+    
+}
+
+h1 img{
+    height: 200px;
+    
+}
+.nav-container .nav {
+    background-color: #FBB03B;
+    
+}
+
+.nav-container .nav ul {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.nav ul li {
+    
+    padding: .8em .8em;
+}
+
+.nav ul li a {
+    
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    padding: .8em .8em;
+    transition: 200ms all ease;
+
+}
+
+.nav ul li a:hover {
+    color: #094174;
+    text-shadow: 1px 5px 6px #094174;
+}
+
+/*BANNER*/
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    
+    background-image: url("/assets/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+}
+
+.banner-text {
+    background-color: hsla(209, 86%, 25%, 0.792);
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+    padding: .6rem 0;
+        
+}
+
+.banner-text h2,
+.banner-text h3{
+    padding: 0.5rem 0;
+
+}
+
+/*SERVICIOS*/
+
+.servicios {
+    background-color: #094174;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 2rem 0;
+}
+
+.servicios h2 {
+    color: white;
+    font-weight: bold;
+    
+}
+.servicios-container {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    
+    padding:  .5rem;
+}
+
+.cards-container {
+    background-color: beige;
+    width: 300px;
+    height: 450px;
+    padding: 1rem;
+    margin: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: space-around;
+    padding-bottom: 0.5rem;
+    border-radius: 5%;
+    color: white;
+    box-shadow: 10px 10px 19px -4px rgba(4,25,43,1);
+    
+}
+
+.paris {
+    background-image: url("/assets/paris.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.new-york {
+    background-image: url("/assets/ny.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.colombia {
+    background-image: url("/assets/colombia.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.grecce {
+    background-image: url("/assets/Greece.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.cards-container h3 {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.cards-container p {
+    line-height: 1.1;
+}
+
+/*QUOTE*/
+
+.quote {
+    display: flex;
+    height: 200px;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Smooch', cursive;
+    font-size: 2rem;
+}
+
+.people {
+    background-color: #FBB03B;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+.cards-people {
+    background-color: #094174;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 1rem;
+    padding: 1.2rem;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 2px solid #094174;
+    box-shadow: 10px 10px 19px -4px rgba(4,25,43,1);
+    color: #094174;
+    transition: .200s all;
+}
+
+
+
+.ceo {
+    background-image: url("/assets/yo.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.hr {
+    background-image: url("/assets/ale.jpg");
+    background-position: center;
+    background-size: cover;  
+    color: white;
+}
+
+.clara {
+    background-image: url("/assets/clara.jpg");
+    background-position: center;
+    background-size: cover;  
+    color: #FBB03B;
+}
+
+.cards-people h3 {
+    margin-bottom: .3rem;
+    font-weight: bold;
+}
+
+/*FOOTER*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #094174;
+    padding: 1.5em 0em;
+    color: white;
+ }
+
+ .social-media {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+ }
+
+ .social-media svg{
+    margin: .5em;
+ }
